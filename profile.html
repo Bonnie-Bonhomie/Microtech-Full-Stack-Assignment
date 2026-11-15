@@ -9,56 +9,53 @@
 </head>
 
 <body>
-    <nav>
-        <h3 style="color: aliceblue;">MY Profile</h3>
-        <ul display="flex" id="nav-list">
-            <a href="#about">
-                <li>About me</li>
-            </a>
-            <a href="#favourite">
-                <li>My Favourite</li>
-            </a>
-            <a href="#project">
-                <li>My Projects</li>
-            </a>
-            <a href="#contact">
-                <li>Contact me</li>
-            </a>
+    <nav class="topbar">
+        <h3>MY Profile</h3>
+        <ul id="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#favourite">Favourite</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#friend-req">Requests</a></li>
         </ul>
     </nav>
 
-    <div class="body" id= "home">
+    <main class="body">
+        <section id="home" class="page-section intro-card">
+            <div class="intro-text">
+                <h1>Akinyemi Alaba Aishat</h1>
+                <h4>Get more details about me. A good personality, a strong mind, and a creative spirit.</h4>
+            </div>
 
-        <center >
-            <h1 style="color: #020a58;">Akinyemi Alaba Aishat</h1>
-            <h4>Get more details about me, Good personality can be met now!</h4>
-            <div id='profile-picture'><img src="/mine.jpeg" alt="my profile picture" height="200" width="200"></div>
-        </center>
+            <div id="profile-picture">
+                <img src="assets/mine.jpeg" alt="my profile picture">
+            </div>
 
-        <!-- <hr> -->
-        <div id="about">
+            <article class="intro-copy">
+                <h4>Introduction</h4>
+                <p>Welcome to my profile! I am excited to share more about myself and my journey as a Flutter developer.</p>
+            </article>
+        </section>
+
+        <section id="about" class="page-section">
             <h2>About Me</h2>
-            <p>My name is Aishat, and I am from Ikire in Osun State. I am a <strong>Flutter developer</strong> with 3
-                years of experience building
-                mobile applications across different sectors, including fintech, logistics, and point-of-sale systems. I
-                enjoy creating functional, user-friendly apps that solve real-world problems and improve business
-                operations through innovative digital solutions. </p>
-            <p>I love reading and building new things. </p>
+            <p>My name is Aishat, and I am from Ikire in Osun State. I am a <strong>Flutter developer</strong> with 3 years of experience building mobile applications across different sectors, including fintech, logistics, and point-of-sale systems. I enjoy creating functional, user-friendly apps that solve real-world problems and improve business operations through innovative digital solutions.</p>
+            <p>I love reading and building new things.</p>
+        </section>
 
-
-        </div>
-        <hr>
-        <div id="favourite">
+        <section id="favourite" class="page-section">
             <h2>My Favourite</h2>
-            <p>My favourite food is Yam and Egg, I love to eat it with my family and friends. </p>
-            <p>My favourite hobby is reading books, I love to read books on different topics. </p>
+            <div class="video-wrap">
+                <video src="assets/fav-video.MP4" controls width="300" height="400" dir="ltr"></video>
+            </div>
+            <p>My favourite food is Yam and Egg, I love to eat it with my family and friends.</p>
+            <p>My favourite hobby is reading books, and I love to read books on different topics.</p>
+        </section>
 
-        </div>
-        <div>
+        <section class="page-section">
             <h2>My Skills</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>Flutter Development</li>
-                <li> State Management Tools (Provider, Riverpod, Bloc)</li>
+                <li>State Management Tools (Provider, Riverpod, Bloc)</li>
                 <li>JavaScript</li>
                 <li>HTML/CSS</li>
                 <li>Python</li>
@@ -67,52 +64,50 @@
                 <li>Teamwork</li>
                 <li>CI/CD</li>
             </ul>
-        </div>
-        <div id="project">
+        </section>
+
+        <section id="project" class="page-section">
             <h2>My Projects</h2>
-            <dl>
+            <dl class="project-card">
                 <dt>DatabootNG</dt>
                 <dd>
-                    DatabootNG is a fintech android application. It is designed to makes all online subscription easy
-                    for every one, It allow user to subscription for data, buy airtime, electricity, television with a
-                    marketplace. It has a secure authentication flow that prevent unauthorised access and build user trust.
+                    DatabootNG is a fintech android application. It is designed to make online subscription easy for everyone, allowing users to buy data, airtime, electricity, and television subscriptions through a marketplace. It has a secure authentication flow that prevents unauthorised access and builds user trust.
                 </dd>
             </dl>
-        </div>
-        
-        <div id= "friend-req">
-            <h2>Become My Friend</h2>
-            <p>Let make new friends!</p>
-            <form action="submit">
-                <label for="full-name">Full Name</label>
-                <br>
-                <input type="text" name="full-name" id=""> <br>
-                <label for="username">Username</label>
-                <br>
-                <input type="text" name="username" value="Bonnie Bestie" readonly> <br>
-                <label for="mail">Email Address</label>
-                <br>
-                <input type="email" name="mail" id="" required>
-            <br>
-                <input type="submit" value="Send Request">
-            </form>
-        </div>
-        <!-- <div id="contact">
+        </section>
+
+        <section id="contact" class="page-section contact-card">
             <h2>Contact Me</h2>
             <p>Email: <a href="mailto:alabaakinyemi09@gmail.com">alabaakinyemi09@gmail.com</a></p>
             <p>Phone: <a href="tel:+2348036069725">+2348036069725</a></p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/alaba-akinyemi-605974377" target="_blank">Akinyemi Alaba
-                    Aishat</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/alaba-akinyemi-605974377" target="_blank" rel="noreferrer">Akinyemi Alaba Aishat</a></p>
+        </section>
+
+        <section id="friend-req" class="page-section request-card">
+            <h2>Become My Friend</h2>
+            <p>Let&apos;s make new friends!</p>
+            <form action="submit">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name">
+
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" value="Bonnie Bestie" readonly>
+
+                <label for="mail">Email Address</label>
+                <input type="email" name="mail" id="mail" required>
+
+                <input type="submit" value="Send Request">
+            </form>
+        </section>
+
+        <div id="back-btn" class="page-section back-btn-wrap">
+            <a href="#home">Back to Top</a>
         </div>
-        -->
-        <center><div id="back-btn"><a href="#home"></a>Back to Top </div></center>
+    </main>
 
-    </div>
     <footer>
-
         <p>Copyright &copy; 2026 Akinyemi Alaba Aishat</p>
     </footer>
-
 </body>
 
 </html>
