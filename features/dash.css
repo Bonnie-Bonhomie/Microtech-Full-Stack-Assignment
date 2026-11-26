@@ -1,0 +1,14 @@
+#balance-ctn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #020a58;
+    /* width: fit-content; */
+    margin: 20px auto;
+    color: #fff;
+}
+#bal-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    /* margin-bottom: 5px; */
+}
