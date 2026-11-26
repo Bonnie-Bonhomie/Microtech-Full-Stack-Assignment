@@ -1,6 +1,7 @@
 
 //Declaration and initialization
 const studentName = "Alaba Akinyemi";
+let webCurrency = "$";
 
 /**
  * I use let to declare the variables because the values of the variables will change as the program runs.
@@ -73,3 +74,6 @@ console.log("The student's balance after receiving money from her Dad is " + rem
  * the student buy books rise back to a good balance. 
  * The student can now spend more money and also save more money for the future.
  */
+
+
+document.getElementById("bal").innerHTML = webCurrency + remainingBalance;
