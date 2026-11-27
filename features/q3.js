@@ -7,6 +7,6 @@ function sumTo(lastNum) {
     return sum;
 }
 
-console.log(sumTo(10));
-console.log(sumTo(30));
+console.log(sumTo(5));
+console.log(sumTo(100));
 
