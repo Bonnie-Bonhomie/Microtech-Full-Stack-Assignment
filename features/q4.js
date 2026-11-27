@@ -10,6 +10,6 @@ function countVowels(str) {
     return count;
 }
 
-console.log(countVowels("Hello World"));
-console.log(countVowels("I am amazing!"));
-console.log(countVowels("Web development is fun!"));
+console.log(countVowels("JavaScript"));
+console.log(countVowels("Education"));
+console.log(countVowels("rhythm"));
