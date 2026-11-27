@@ -87,11 +87,11 @@ console.log('15% of 200 = '+ percentage(200, 15));
 // Quadratic equation example: x^2 - 3x + 2 = 0`    
 let qua = quadratic(1, -3, 2);
 
-console.log('x2 - 3x + 2 = 0 roots are x = '+ qua[0] + ' and x = ' + qua[1]);
+console.log('x^2 - 3x + 2 = 0 roots are x = '+ qua[0] + ' and x = ' + qua[1]);
 
 // Quadratic equation example: x^2 - 3x + 2 = 0`    
-let qua2 = quadratic(1, -3, 2);
+let qua2 = quadratic(1, 2, 5);
 
-console.log('x2 - 3x + 2 = 0 roots are x = '+ qua2[0] + ' and x = ' + qua2[1]);
+console.log('x^2 - 2x + 5 = 0 roots are x = '+ qua2[0] + ' and x = ' + qua2[1]);
 
 
